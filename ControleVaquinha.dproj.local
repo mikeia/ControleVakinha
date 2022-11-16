@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/11/14 13:52:56.000.007,=C:\Users\mikei\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/15 15:35:17.000.269,=C:\Users\mikei\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/15 15:36:04.000.742,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untPrincipal.pas=C:\Users\mikei\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/15 15:36:04.000.742,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untPrincipal.dfm=C:\Users\mikei\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/11/15 15:36:11.000.203,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\ControleVaquinha.dproj=C:\Users\mikei\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/11/15 15:43:05.000.219,=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas</Transaction>
+    <Transaction>2022/11/15 15:43:21.000.150,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untDm.pas=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas</Transaction>
+    <Transaction>2022/11/15 15:43:21.000.150,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untDm.dfm=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.dfm</Transaction>
+    <Transaction>2022/11/15 18:25:26.000.433,=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas</Transaction>
+    <Transaction>2022/11/15 18:25:38.000.027,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untLancamento.dfm=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.dfm</Transaction>
+    <Transaction>2022/11/15 18:25:38.000.027,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untLancamento.pas=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas</Transaction>
+    <Transaction>2022/11/16 08:56:48.000.647,=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas</Transaction>
+    <Transaction>2022/11/16 08:57:09.000.683,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.dfm=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untLogin.dfm</Transaction>
+    <Transaction>2022/11/16 08:57:09.000.683,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untLogin.pas</Transaction>
+    <Transaction>2022/11/16 10:26:55.000.193,=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas</Transaction>
+    <Transaction>2022/11/16 10:28:23.000.798,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.dfm=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untCriarUsuario.dfm</Transaction>
+    <Transaction>2022/11/16 10:28:23.000.798,C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\Unit1.pas=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\untCriarUsuario.pas</Transaction>
+  </Transactions>
+</BorlandProject>

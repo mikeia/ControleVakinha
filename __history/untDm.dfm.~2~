@@ -1,0 +1,17 @@
+object dm: Tdm
+  OldCreateOrder = False
+  Height = 459
+  Width = 620
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\mikei\OneDrive\Documentos\ControledeVaquinha\b' +
+        'anco\BASE.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'DriverID=FB')
+    LoginPrompt = False
+    Left = 496
+    Top = 32
+  end
+end

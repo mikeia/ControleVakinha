@@ -1,0 +1,231 @@
+object frmCriarUsuario: TfrmCriarUsuario
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = 'Criar Conta'
+  ClientHeight = 454
+  ClientWidth = 768
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnPrincipal: TPanel
+    Left = 0
+    Top = 0
+    Width = 768
+    Height = 454
+    Align = alClient
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 96
+    ExplicitTop = 160
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Label1: TLabel
+      Left = 319
+      Top = 47
+      Width = 119
+      Height = 29
+      Alignment = taCenter
+      Caption = 'Criar Conta'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -24
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object pnFundo: TPanel
+      Left = 238
+      Top = 88
+      Width = 273
+      Height = 297
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 0
+      object Label2: TLabel
+        Left = 15
+        Top = 18
+        Width = 49
+        Height = 23
+        Alignment = taCenter
+        Caption = 'Nome'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 14
+        Top = 90
+        Width = 53
+        Height = 23
+        Alignment = taCenter
+        Caption = 'Senha'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 15
+        Top = 152
+        Width = 163
+        Height = 23
+        Alignment = taCenter
+        Caption = 'Confirma'#231#227'o Senha'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object edtNome: TEdit
+        Left = 10
+        Top = 43
+        Width = 250
+        Height = 33
+        BevelInner = bvNone
+        BevelKind = bkFlat
+        BevelOuter = bvRaised
+        BorderStyle = bsNone
+        CharCase = ecUpperCase
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 8453888
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object edtSenha: TEdit
+        Left = 10
+        Top = 115
+        Width = 250
+        Height = 33
+        BevelInner = bvNone
+        BevelKind = bkFlat
+        BevelOuter = bvRaised
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 8453888
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object edtConfirmSenha: TEdit
+        Left = 10
+        Top = 176
+        Width = 250
+        Height = 33
+        BevelInner = bvNone
+        BevelKind = bkFlat
+        BevelOuter = bvRaised
+        BorderStyle = bsNone
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 8453888
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnExit = edtConfirmSenhaExit
+      end
+      object pnCriarConta: TPanel
+        Left = 10
+        Top = 229
+        Width = 250
+        Height = 41
+        Color = 8453888
+        ParentBackground = False
+        TabOrder = 3
+        object btnCriarConta: TSpeedButton
+          Left = 1
+          Top = 1
+          Width = 248
+          Height = 39
+          Align = alClient
+          Caption = 'Criar Conta'
+          Flat = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -21
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          OnClick = btnCriarContaClick
+          OnMouseEnter = btnCriarContaMouseEnter
+          OnMouseLeave = btnCriarContaMouseLeave
+          ExplicitLeft = 96
+          ExplicitTop = 24
+          ExplicitWidth = 23
+          ExplicitHeight = 22
+        end
+      end
+    end
+  end
+  object qryInsereUsuario: TFDQuery
+    Connection = dm.Conexao
+    SQL.Strings = (
+      'SELECT * FROM USERS')
+    Left = 592
+    Top = 112
+    object qryInsereUsuarioID_USER: TIntegerField
+      FieldName = 'ID_USER'
+      Origin = 'ID_USER'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryInsereUsuarioNAME: TStringField
+      FieldName = 'NAME'
+      Origin = 'NAME'
+      Size = 10
+    end
+    object qryInsereUsuarioPASSWORD: TStringField
+      FieldName = 'PASSWORD'
+      Origin = '"PASSWORD"'
+      Size = 10
+    end
+  end
+  object qryUltimo: TFDQuery
+    Connection = dm.Conexao
+    SQL.Strings = (
+      'SELECT MAX(ID_USER) AS ULTIMO FROM USERS')
+    Left = 600
+    Top = 216
+    object qryUltimoULTIMO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'ULTIMO'
+      Origin = 'ULTIMO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = qryInsereUsuario
+    Left = 672
+    Top = 312
+  end
+end

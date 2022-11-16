@@ -1,0 +1,18 @@
+program ControleVaquinha;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untDm in 'untDm.pas' {dm: TDataModule},
+  untLancamento in 'untLancamento.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
